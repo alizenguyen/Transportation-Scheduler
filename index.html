@@ -10,13 +10,50 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	
 	<!-- CSS Links -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<!-- GOOGLE FONT LINKS -->
     
 </head>
 <body>
     
+    <div class="jumbotron">
+        <h1>Hello, world!</h1>
+        <p>...</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+
+    <h3>Current Tranposrtation Schedule</h3>
+
+    <div class="current-schedule">
+        <div class="panel panel-default">
+            <div class="panel-body">
+              Insert Train Info Here.
+            </div>
+          </div>
+    </div>
+
+    <div class="add-transport">
+        <form role="form">
+            <div class="form-group">
+              <label for="name-input">Transportation:</label>
+              <input class="form-control" id="transport-input" type="text">
+            </div>
+            <div class="form-group">
+              <label for="email-input">Destination:</label>
+              <input class="form-control" id="destination-input" type="email">
+            </div>
+            <div class="form-group">
+              <label for="age-input">First Transportation Time (HH:mm - military time):</label>
+              <input class="form-control" id="time-input" type="number">
+            </div>
+            <div class="form-group">
+              <label for="comment-input">Frequency (mins):</label>
+              <textarea class="form-control" id="comment-input" rows="5"></textarea>
+            </div>
+            <button class="btn btn-default" id="add-transport" type="submit">Submit</button>
+        </form>
+    </div> <!--end add-transport -->
 
     <!-- JQUERY Link -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
