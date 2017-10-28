@@ -13,5 +13,13 @@ firebase.initializeApp(config);
 //Variables
 var database = firebase.database();
 
-//User Submits train information
 //Train information gets stored and displayed onto webpage
+    //Get 'snapshot' of stored data at initial load and subsequent value changes
+    database.ref().on("value", function() {
+
+    }, function(errorObject) {
+        console.log("The read failed: " + errorObject.code)
+    });
+
+//User Submits train information
+    //Saves info into database
