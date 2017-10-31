@@ -52,20 +52,20 @@
     <div class="add-transport">
         <form role="form">
             <div class="form-group">
-              <label for="name-input">Transportation:</label>
+              <label for="transport-input">Transportation Name:</label>
               <input class="form-control" id="transport-input" type="text">
             </div>
             <div class="form-group">
-              <label for="email-input">Destination:</label>
-              <input class="form-control" id="destination-input" type="email">
+              <label for="destination-input">Destination:</label>
+              <input class="form-control" id="destination-input" type="text">
             </div>
             <div class="form-group">
               <label for="age-input">First Transportation Time (HH:mm - military time):</label>
-              <input class="form-control" id="time-input" type="number">
+              <input class="form-control" id="time-input" type="time">
             </div>
             <div class="form-group">
-              <label for="comment-input">Frequency (mins):</label>
-              <textarea class="form-control" id="comment-input" rows="5"></textarea>
+              <label for="frequency-input">Frequency (mins):</label>
+              <input class="form-control" id="frequency-input" type="number"></input>
             </div>
             <button class="btn btn-default" id="add-transport" type="submit">Submit</button>
         </form>
@@ -78,7 +78,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
 
     <!-- Javascript Link -->
-    <script src="assets/javascript/gif.js"></script>
+    <script src="javascript/transport.js"></script>
 
 </body>
 </html>

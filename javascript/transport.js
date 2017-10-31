@@ -4,7 +4,7 @@ var config = {
     authDomain: "transportation-scheduler.firebaseapp.com",
     databaseURL: "https://transportation-scheduler.firebaseio.com",
     projectId: "transportation-scheduler",
-    storageBucket: "",
+    storageBucket: "transportation-scheduler.appspot.com",
     messagingSenderId: "245818533501"
 };
 
@@ -22,4 +22,23 @@ var database = firebase.database();
     });
 
 //User Submits train information
-    //Saves info into database
+    $("#add-transport").on("click", function() {
+        event.preventDefault();
+        
+        var transport = $("#transport-input").val().trim();
+        var destination = $("#destination-input").val().trim();
+        var time = $("#time-input").val().trim();
+        var frequency = $("#frequency-input").val().trim();
+        
+        console.log(transport);
+
+        //Adds info into database
+        database.ref().push({
+            transportation: transport,
+            destination: destination,
+            firsttransport: time,
+            frequency: frequency,
+        });
+
+    });
+    
