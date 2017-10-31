@@ -15,7 +15,20 @@ var database = firebase.database();
 
 //Train information gets stored and displayed onto webpage
     //Get 'snapshot' of stored data at initial load and subsequent value changes
-    database.ref().on("value", function() {
+    database.ref().on("child_added", function(snapshot) {
+        var transportation = snapshot.val().transportation;
+    	var destination = snapshot.val().destination;
+    	var firsttransport = snapshot.val().firsttransport;
+        var frequency = snapshot.val().frequency;
+
+        console.log(destination);
+        console.log(firsttransport);
+        
+        /*var monthsWorked = moment().diff(moment(startDate), 'months')
+    	console.log(monthsWorked);
+    	var totalBilled = monthsWorked * monthlyRate;*/
+
+    $("#tbody").append("<tr> <td>" + transportation + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + "TBD" + "</td><td>" + "TBD" + "</td>" );
 
     }, function(errorObject) {
         console.log("The read failed: " + errorObject.code)
