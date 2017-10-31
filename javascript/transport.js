@@ -18,17 +18,28 @@ var database = firebase.database();
     database.ref().on("child_added", function(snapshot) {
         var transportation = snapshot.val().transportation;
     	var destination = snapshot.val().destination;
-    	var firsttransport = snapshot.val().firsttransport;
+    	var firstTransport = snapshot.val().firsttransport;
         var frequency = snapshot.val().frequency;
 
         console.log(destination);
-        console.log(firsttransport);
+        console.log(firstTransport);
         
-        /*var monthsWorked = moment().diff(moment(startDate), 'months')
-    	console.log(monthsWorked);
-    	var totalBilled = monthsWorked * monthlyRate;*/
+        var firstTimeConverted = moment(firstTransport, "hh:mm").subtract(1, "years");
+        console.log(firstTimeConverted);
+        var currentTime = moment();
+        console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+        var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+        console.log("DIFFERENCE IN TIME: " + diffTime);
+        var tRemainder = diffTime % frequency;
+        console.log(tRemainder);
+        var tMinutesTillTrain = frequency - tRemainder;
+        console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
+        var nextTrain = moment().add(tMinutesTillTrain, "minutes");
+        nextTrain = moment(nextTrain).format("hh:mm");
+        console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
-    $("#tbody").append("<tr> <td>" + transportation + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + "TBD" + "</td><td>" + "TBD" + "</td>");
+
+    $("#tbody").append("<tr> <td>" + transportation + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain+ " mins</td>");
 
     }, function(errorObject) {
         console.log("The read failed: " + errorObject.code)
