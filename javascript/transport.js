@@ -28,7 +28,7 @@ var database = firebase.database();
     	console.log(monthsWorked);
     	var totalBilled = monthsWorked * monthlyRate;*/
 
-    $("#tbody").append("<tr> <td>" + transportation + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + "TBD" + "</td><td>" + "TBD" + "</td>" );
+    $("#tbody").append("<tr> <td>" + transportation + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + "TBD" + "</td><td>" + "TBD" + "</td>");
 
     }, function(errorObject) {
         console.log("The read failed: " + errorObject.code)
