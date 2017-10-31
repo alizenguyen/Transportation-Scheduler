@@ -39,7 +39,7 @@ var database = firebase.database();
         console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
 
-    $("#tbody").append("<tr> <td>" + transportation + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain+ " mins</td>");
+    $("#tbody").append("<tr> <td>" + transportation + "</td><td>" + destination + "</td><td>" + frequency + " mins</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain+ " mins</td>");
 
     }, function(errorObject) {
         console.log("The read failed: " + errorObject.code)
