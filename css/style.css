@@ -4,6 +4,18 @@ nav {
     padding-top: 0.5%;
 }
 
+th {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+td {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
 /*JUMBOTRON EDITS*/
 .jumbotron {
     height: 550px;
@@ -15,12 +27,13 @@ nav {
 #jumbo-description {
     text-align: center;
     color: white;
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
     padding-top: 21%;
     font-family: 'Raleway', sans-serif;
+    font-weight: 200;
     letter-spacing: 2px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /*NAV EDITS*/
@@ -33,7 +46,8 @@ nav {
 #nav-mobile {
     margin-right: 5%;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 /*CURRENT SCHEDULE */
 .current-schedule {
@@ -64,12 +78,26 @@ nav {
     letter-spacing: 2px;
 }
 
+#add-btn:hover {
+    background-color: #57B9AE;
+}
+
 #form {
-    padding: 5.75%;
+    padding: 5.25%;
 } 
 
 .table-input {
     color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.input {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 200;
 }
 
 .col {
