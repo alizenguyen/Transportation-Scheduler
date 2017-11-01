@@ -46,7 +46,7 @@ var database = firebase.database();
     });
 
 //User submits train information
-    $("#add-transport").on("click", function() {
+    $("#add-btn").on("click", function() {
         event.preventDefault();
         
         var transport = $("#transport-input").val().trim();
