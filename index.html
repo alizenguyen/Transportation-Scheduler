@@ -28,12 +28,10 @@
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo center">TRANSPORT SCHEDULER</a>
-            <ul class="left hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li class="active"><a href="collapsible.html">JavaScript</a></li>
-            </ul>
+          <a href="#" class="brand-logo">TRANSPORT SCHEDULER</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Schedule</a></li>
+          </ul>
         </div>
     </nav>
     
@@ -72,19 +70,19 @@
                 <form role="form" class="form">
                     <div class="form-group">
                       <label for="transport-input" class="table-input">Transportation Name:</label>
-                      <input class="form-control" id="transport-input" type="text" required>
+                      <input class="form-control input" id="transport-input" type="text" required>
                     </div>
                     <div class="form-group">
                       <label for="destination-input" class="table-input">Destination:</label>
-                      <input class="form-control" id="destination-input" type="text">
+                      <input class="form-control input" id="destination-input" type="text">
                     </div>
                     <div class="form-group">
                       <label for="time-input" class="table-input">First Transportation Time (HH:mm - military time):</label>
-                      <input class="form-control" id="time-input" type="text">
+                      <input class="form-control input" id="time-input" type="text">
                     </div>
                     <div class="form-group">
                       <label for="frequency-input" class="table-input">Frequency (mins):</label>
-                      <input class="form-control" id="frequency-input" type="number"></input>
+                      <input class="form-control input" id="frequency-input" type="number"></input>
                     </div>
                     <button class="btn btn-default" id="add-btn" type="submit">Submit</button>
                 </form>

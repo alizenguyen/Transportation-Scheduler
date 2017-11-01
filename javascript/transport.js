@@ -55,12 +55,7 @@ var database = firebase.database();
         var frequency = $("#frequency-input").val().trim();
         
         console.log(transport);
-
-        /*if (transport === ' ' || destination === ' ' || time === ' ' || frequency === ' ') {
-            alert("please fill out all required fields");
-            return false;
-        }*/ 
-
+         
         //Adds info into database
         database.ref().push({
             transportation: transport,
@@ -69,6 +64,7 @@ var database = firebase.database();
             frequency: frequency,
         });
     });
+
 
 //User clears train information    
     $("#clear-btn").on("click", function() {
