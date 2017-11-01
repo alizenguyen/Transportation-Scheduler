@@ -45,7 +45,7 @@ var database = firebase.database();
         console.log("The read failed: " + errorObject.code)
     });
 
-//User Submits train information
+//User submits train information
     $("#add-transport").on("click", function() {
         event.preventDefault();
         
@@ -68,6 +68,13 @@ var database = firebase.database();
             firsttransport: time,
             frequency: frequency,
         });
-
     });
-    
+
+//User clears train information    
+    $("#clear-btn").on("click", function() {
+        //create a reference to the file to delete
+        var databaseRef = database.ref();
+
+        databaseRef.remove();
+        $("#tbody").empty();
+    });

@@ -5,13 +5,18 @@
 .add-transport {
     width: 80%;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     display: block;
 }
 
 .current-schedule {
     width: 80%;
     margin-left: 10%;
+}
+
+.clear-table {
+    margin-left: 42%;
+    margin-top: 5%;
 }
 
 /* input:focus {
