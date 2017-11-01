@@ -9,6 +9,10 @@
     margin-left: 10%;
 }
 
+/* input:focus {
+    background-color: yellow;
+} */
+
 #schedule-title {
     text-align: center;
 }

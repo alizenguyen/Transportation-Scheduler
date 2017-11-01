@@ -56,6 +56,11 @@ var database = firebase.database();
         
         console.log(transport);
 
+        /*if (transport === ' ' || destination === ' ' || time === ' ' || frequency === ' ') {
+            alert("please fill out all required fields");
+            return false;
+        }*/ 
+
         //Adds info into database
         database.ref().push({
             transportation: transport,
