@@ -1,11 +1,6 @@
 nav {
     background-color: #FFC933;
 }
-
-.testing {
-    padding: 15.7%;
-}
-
 .current-schedule {
     width: 80%;
     margin-left: 10%;
@@ -46,14 +41,21 @@ nav {
 
 .transport-info {
     background-color: #EFEFEF;
+    height: 18%;
 }
 
 .table-input {
     color: white;
 }
 
+.col {
+    display: table-cell;
+}
+
 #bottom-row {
     margin-top: 5%;
+    width: 100%;
+    min-height: 18% !important;
 }
 
 /* input:focus {
