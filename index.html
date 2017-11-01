@@ -32,7 +32,7 @@
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">TRANSPORT SCHEDULER</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">SCHEDULE</a></li>
+            <li><a href="#targetname">SCHEDULE</a></li>
           </ul>
         </div>
     </nav>
@@ -43,7 +43,8 @@
 
     <h3 id="schedule-title">CURRENT TRANSPORTATION SCHEDULE</h3>
 
-    <div class="current-schedule">
+    <a name="targetname"></a>
+    <div class="current-schedule"> 
         <div class="panel panel-default">
                 <table class="table highlight">
                     <thead>
@@ -86,15 +87,13 @@
                     <label for="frequency-input" class="table-input">Frequency (mins):</label>
                     <input class="form-control input" id="frequency-input" type="number"></input>
                 </div>
-                <button class="btn btn-default" id="add-btn" type="submit">Submit</button>
+                <button class="btn btn-default" id="add-btn" type="submit"><i class="material-icons left">check</i>Submit</button>
             </form>
         </div>
     </div>
 
     <footer class="page-footer">
-          <div class="container">
-          © 2014 Copyright Text
-          </div>
+          <p id="footer-text">HAPPY RIDING!</p>
     </footer>
 
 
