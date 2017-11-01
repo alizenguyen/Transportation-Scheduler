@@ -36,7 +36,7 @@ nav {
 }
 
 .form {
-    padding: 5%;
+    padding: 6%;
 } 
 
 .transport-info {
@@ -54,6 +54,7 @@ nav {
 
 #testing {
     font-size: 5em;
+    padding: 15% 5% 25% 5%;
 }
 
 #bottom-row {
@@ -72,7 +73,7 @@ nav {
 
 /* FOOTER */
 .page-footer {
-    margin-top: -1.25%;
-    height: 60px;
+    margin-top: -1.5%;
+    height: 70px;
     background-color: #FFC933;
 }
