@@ -13,6 +13,14 @@
     height: 300px;
 }
 
+#jumbo-header {
+    text-align: center;
+}
+
+#jumbo-description {
+    text-align: center;
+}
+
 /*FORM/INFO EDITS */
 .add-transport {
     width: 80%;
