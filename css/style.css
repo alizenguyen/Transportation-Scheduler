@@ -1,6 +1,22 @@
 nav {
     background-color: #FFC933;
 }
+
+/*JUMBOTRON EDITS*/
+.jumbotron {
+    height: 500px;
+    background: url(../images/background.png) center center no-repeat;
+    background-size: cover;
+    margin-top: -1%;
+}
+
+#jumbo-description {
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+}
+
+/*CURRENT SCHEDULE */
 .current-schedule {
     width: 80%;
     margin-left: 10%;
@@ -12,37 +28,14 @@ nav {
     background-color: #FC4638;
 }
 
-/*JUMBOTRON EDITS*/
-.jumbotron {
-    height: 300px;
-}
-
-#jumbo-description {
-    margin-top: 10%;
-    text-align: center;
-}
-
 /*FORM/INFO EDITS */
-.add-transport {
-    width: 80%;
-    margin-left: 10%;
-    display: block;
-    background-color: #2D2D2D;
-    color: white;
-}
-
 #add-btn {
     background-color: #FC4638;
 }
 
-.form {
+#form {
     padding: 6%;
 } 
-
-.transport-info {
-    background-color: #EFEFEF;
-    height: 18%;
-}
 
 .table-input {
     color: white;
@@ -54,14 +47,27 @@ nav {
 
 #testing {
     font-size: 5em;
-    padding: 15% 5% 25% 5%;
-}
+    padding: 50px 20px 160px 20px;
+    height: 100%;
+} 
 
 #bottom-row {
     margin-top: 5%;
     width: 100%;
-    min-height: 18% !important;
 }
+
+/* EQUAL COLUMNS */
+
+.row {
+    display: table;
+}
+
+.row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
 
 /* input:focus {
     background-color: yellow;

@@ -62,30 +62,30 @@
 
     <a class="waves-effect waves-light btn clear-table" id="clear-btn"><i class="material-icons left">delete</i>clear schedule</a>
     
-    <div class="row" id="bottom-row">
-        <div class="col s4 transport-info table-cell">
-            <h1 class = "hide-on-med-and-down" id="testing">TRANSPORT INFO + TIME HERE</h1>
+    <div class="row is-table-row" id="bottom-row">
+        <div class="col s4 transport-info" style="background-color: #EFEFEF">
+                <h1 class = "hide-on-med-and-down" id="testing">TRANSPORT INFO + TIME HERE</h1>
         </div>
-        <div class="col s8 add-transport table-cell">
-                <form role="form" class="form">
-                    <div class="form-group">
-                      <label for="transport-input" class="table-input">Transportation Name:</label>
-                      <input class="form-control input" id="transport-input" type="text" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="destination-input" class="table-input">Destination:</label>
-                      <input class="form-control input" id="destination-input" type="text">
-                    </div>
-                    <div class="form-group">
-                      <label for="time-input" class="table-input">First Transportation Time (HH:mm - military time):</label>
-                      <input class="form-control input" id="time-input" type="text">
-                    </div>
-                    <div class="form-group">
-                      <label for="frequency-input" class="table-input">Frequency (mins):</label>
-                      <input class="form-control input" id="frequency-input" type="number"></input>
-                    </div>
-                    <button class="btn btn-default" id="add-btn" type="submit">Submit</button>
-                </form>
+        <div class="col s8 add-transport" style="background-color: #2D2D2D">
+            <form role="form" id="form">
+                <div class="form-group">
+                    <label for="transport-input" class="table-input">Transportation Name:</label>
+                    <input class="form-control input" id="transport-input" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination-input" class="table-input">Destination:</label>
+                    <input class="form-control input" id="destination-input" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="time-input" class="table-input">First Transportation Time (HH:mm - military time):</label>
+                    <input class="form-control input" id="time-input" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="frequency-input" class="table-input">Frequency (mins):</label>
+                    <input class="form-control input" id="frequency-input" type="number"></input>
+                </div>
+                <button class="btn btn-default" id="add-btn" type="submit">Submit</button>
+            </form>
         </div>
     </div>
 
@@ -98,7 +98,7 @@
 
 
     <!-- JQUERY Link -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <!-- Firebase Link -->
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>

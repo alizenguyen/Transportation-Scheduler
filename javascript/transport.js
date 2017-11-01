@@ -55,7 +55,7 @@ var database = firebase.database();
         var frequency = $("#frequency-input").val().trim();
         
         console.log(transport);
-         
+
         //Adds info into database
         database.ref().push({
             transportation: transport,
